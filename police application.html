@@ -1,0 +1,166 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bronx True Crime | MET Recruitment Exam</title>
+  <style>
+    * { box-sizing: border-box; font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
+    body { margin:0; background:linear-gradient(135deg,#0a1a2f,#102a44); color:#fff; min-height:100vh; display:flex; justify-content:center; align-items:center; padding:40px 0; }
+    .container { background:#0f2238; width:100%; max-width:1000px; border-radius:16px; padding:40px; box-shadow:0 20px 60px rgba(0,0,0,0.4); }
+    header { text-align:center; margin-bottom:40px; }
+    header h1 { font-size:2.2rem; margin-bottom:10px; }
+    header p { color:#b8c7dc; }
+    .section { margin-bottom:30px; }
+    .section h2 { font-size:1.3rem; border-left:4px solid #1e90ff; padding-left:12px; margin-bottom:15px; }
+    label { display:block; margin-bottom:6px; color:#c9d7ea; font-weight:600; }
+    textarea, input, select { width:100%; padding:12px; border-radius:10px; border:none; background:#152c46; color:#fff; margin-bottom:6px; resize:vertical; }
+    button { width:100%; padding:14px; border-radius:12px; border:none; background:#1e90ff; color:#fff; font-size:1.1rem; font-weight:bold; cursor:pointer; }
+    .status { margin-top:15px; text-align:center; font-weight:bold; }
+    footer { text-align:center; margin-top:25px; color:#8fa6c1; font-size:.85rem; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>[BTC] MET Recruitment Examination</h1>
+    <p>Answer truthfully and carefully. High Command & Commissioner will review.</p>
+  </header>  <form id="applicationForm"><div class="section">
+  <h2>Basic Info</h2>
+  <label>Email</label><input id="email" type="email" required />
+  <label>Roblox Username & Profile Link</label><input id="roblox" required />
+  <label>Discord Username & ID</label><input id="discord" required />
+  <label>Can you chat on Roblox?</label>
+  <select id="canChat"><option>Yes</option><option>No</option></select>
+  <label>Primary Device</label>
+  <select id="device"><option>Desktop</option><option>Console</option><option>Mobile</option><option>Tablet</option></select>
+  <label>Do you understand and accept the rules?</label><select id="rules"><option>Yes</option><option>No</option></select>
+</div>
+
+<div class="section">
+  <h2>Internal Questions</h2>
+  <label>Age</label>
+  <select id="age">
+    <option>Under 9</option><option>9-12</option><option>13-15</option><option>16-17</option><option>19-20</option><option>21+</option>
+  </select>
+  <label>Why do you want to be a police here at Bronx True Crime?</label>
+  <textarea id="whyPolice" rows="4" required></textarea>
+  <label>What makes you fit into our team?</label>
+  <textarea id="fitTeam" rows="4" required></textarea>
+  <label>Past experience as police officer (bureau & division)</label>
+  <textarea id="pastExp" rows="4" required></textarea>
+  <label>Why should we pick you over other applicants?</label>
+  <textarea id="whyPick" rows="4" required></textarea>
+  <label>Knowledge about lethal force</label>
+  <textarea id="lethalForce" rows="4" required></textarea>
+  <label>Are you allowed to arrest someone in a safe zone?</label>
+  <textarea id="safeZone" rows="4" required></textarea>
+  <label>Explain briefly the jobs of the following divisions</label>
+  <textarea id="divisions" rows="4" required></textarea>
+</div>
+
+<div class="section">
+  <h2>Common Situations</h2>
+  <label>Arresting criminal claiming self-defense, what do you do?</label>
+  <textarea id="situation1" rows="4" required></textarea>
+  <label>Gang spam-killing you, what do you do?</label>
+  <textarea id="situation2" rows="4" required></textarea>
+  <label>Officer caught cuff-tapping / tool abusing, what do you do?</label>
+  <textarea id="situation3" rows="4" required></textarea>
+  <label>Believing you got falsely disciplined, what do you do?</label>
+  <textarea id="situation4" rows="4" required></textarea>
+</div>
+
+<div class="section">
+  <h2>Grammar</h2>
+  <label>Correct: u have the rights 2 remyn s1lent. anythin you say can and will be used aganst you in a cort of law. u have the rights to a atorney. if u cant afford one. one will be provided for u</label>
+  <textarea id="grammar1" rows="4" required></textarea>
+  <label>Rate your aim (1-10)</label>
+  <select id="aim"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option></select>
+  <label>Correct: u are undr arest for murderer</label>
+  <textarea id="grammar2" rows="2" required></textarea>
+  <label>Correct: stop cuff tapping. this is ur verbal warn</label>
+  <textarea id="grammar3" rows="2" required></textarea>
+</div>
+
+<div class="section">
+  <h2>Activity & Rules</h2>
+  <label>Activity scale 1-10</label>
+  <select id="activity"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option></select>
+  <label>Do you understand inactivity consequences?</label>
+  <select id="inactivity"><option>Yes</option><option>No</option></select>
+  <label>Do you understand trolling can decline your application?</label>
+  <select id="troll"><option>Yes</option><option>No</option></select>
+  <label>Have you read and understood all rules?</label>
+  <select id="readRules"><option>Yes</option><option>No</option></select>
+</div>
+
+<div class="section">
+  <h2>Sending</h2>
+  <label>Select 2 divisions/bureaus you believe specialize in:</label>
+  <select id="divSelect" multiple>
+    <option value="SWAT">SWAT</option>
+    <option value="FBI">FBI</option>
+    <option value="PSB">Patrol Service Bureau</option>
+    <option value="HR">Human Resources</option>
+    <option value="IAB">Internal Affairs Bureau</option>
+  </select>
+  <label>Did you read over your answers?</label>
+  <select id="readAnswers"><option>Yes</option></select>
+  <label>Do you have any questions before submitting?</label>
+  <textarea id="questions" rows="2"></textarea>
+</div>
+
+<button type="submit">Submit Application</button>
+<div class="status" id="status"></div>
+
+  </form>  <footer>© Bronx True Crime | MET Recruitment</footer>
+</div><script>
+const webhookURL = "https://discord.com/api/webhooks/1469801443736162446/7F25fTIei4twNIVDQymrg8lqOsDARLL246JHylHj0xF1J0JJ0EXxRezmOruG0grL4PbD";
+const v = id => document.getElementById(id).value;
+const multiSelectValues = id => Array.from(document.getElementById(id).selectedOptions).map(o => o.text).join(", ");
+
+const questions = [
+  { id: "whyPolice", text: "Why do you want to be a police here at Bronx True Crime?" },
+  { id: "fitTeam", text: "What makes you fit into our team?" },
+  { id: "pastExp", text: "Past experience as police officer (bureau & division)" },
+  { id: "whyPick", text: "Why should we pick you over other applicants?" },
+  { id: "lethalForce", text: "Knowledge about lethal force" },
+  { id: "safeZone", text: "Are you allowed to arrest someone in a safe zone?" },
+  { id: "divisions", text: "Explain briefly the jobs of the following divisions" },
+  { id: "situation1", text: "Arresting criminal claiming self-defense, what do you do?" },
+  { id: "situation2", text: "Gang spam-killing you, what do you do?" },
+  { id: "situation3", text: "Officer caught cuff-tapping / tool abusing, what do you do?" },
+  { id: "situation4", text: "Believing you got falsely disciplined, what do you do?" },
+  { id: "grammar1", text: "Grammar correction 1" },
+  { id: "grammar2", text: "Grammar correction 2" },
+  { id: "grammar3", text: "Grammar correction 3" },
+  { id: "questions", text: "Additional questions" }
+];
+
+document.getElementById("applicationForm").addEventListener("submit", async e => {
+  e.preventDefault();
+
+  const embedFields = [
+    { name: "Roblox", value: v("roblox"), inline: true },
+    { name: "Discord", value: v("discord"), inline: true },
+    { name: "Email", value: v("email"), inline: true },
+    { name: "Divisions Selected", value: multiSelectValues("divSelect") }
+  ];
+
+  questions.forEach(q => embedFields.push({ name: q.text, value: v(q.id) }));
+
+  const payload = { embeds: [{ title: "MET Application", color: 3066993, fields: embedFields, timestamp: new Date() }] };
+
+  const status = document.getElementById("status");
+  status.textContent = "Submitting...";
+
+  try {
+    const r = await fetch(webhookURL, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) });
+    status.textContent = r.ok ? "Application submitted!" : "Submission failed";
+    if (r.ok) e.target.reset();
+  } catch {
+    status.textContent = "Error submitting";
+  }
+});
+</script></body>
+</html>
